@@ -1,0 +1,109 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+  desc "Run Tests"
+  lane :test do
+    scan
+  end
+
+  desc "Build"
+  desc "Build without code sign. Just to see if the build is working"
+  lane :build do |options|
+    gym(
+      xcargs: "CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO",
+      scheme: "HelloWorld",
+      skip_package_ipa: true,
+      clean: true
+    )
+  end
+
+  desc "Installs the certificates and profiles locally"
+  lane :certificates do |options|
+    if options[:use_temporary_keychain]
+      create_temporary_keychain
+      sh "security default-keychain -s #{ENV["KEYCHAIN_NAME"]}"
+    end
+
+    readonly = true
+
+    # match(
+    #   git_branch: "SemaphoreCI",
+    #   app_identifier: "com.semaphoreci.ios-example",
+    #   team_id: "XXX",
+    #   type: "ad-hoc",
+    #   readonly: readonly,
+    #   force_for_new_devices: force_for_new_devices
+    # )
+    #
+    # match(
+    #   git_branch: "SemaphoreCI",
+    #   app_identifier: "com.semaphoreci.ios-example",
+    #   team_id: "XXX",
+    #   type: "appstore",
+    #   readonly: readonly
+    # )
+
+
+    if options[:use_temporary_keychain]
+      sh "security set-key-partition-list -S apple-tool:,apple:,codesign: -s -k #{ENV["KEYCHAIN_NAME"]} #{ENV["KEYCHAIN_PASSWORD"]}"
+    end
+  end
+
+  private_lane :create_temporary_keychain do
+    keychain_name = "temporary_keychain.keychain"
+    ENV["KEYCHAIN_NAME"] = keychain_name
+    ENV["KEYCHAIN_PASSWORD"] = keychain_name
+    ENV["MATCH_KEYCHAIN_NAME"] = keychain_name
+    ENV["MATCH_KEYCHAIN_PASSWORD"] = keychain_name
+
+    create_keychain(
+      name: keychain_name,
+      default_keychain: true,
+      unlock: true,
+      timeout: false,
+      add_to_search_list: true
+    )
+  end
+end
+
+
+#
+#   desc "Ad-hoc build"
+#   lane :adhoc do
+#     match(type: "adhoc")
+#     gym(export_method: "ad-hoc")
+#   end
+#
+#   desc "Submit a new Beta Build to Apple TestFlight"
+#   desc "This will also make sure the profile is up to date"
+#   lane :beta do
+#     match(type: "appstore")
+#     gym(export_method: "app-store")
+#   end
+#
+#   desc "Deploy a new version to the App Store"
+#   lane :release do
+#     # match(type: "appstore")
+#     # snapshot
+#     gym # Build your app - more options available
+#     deliver(force: true)
+#     # frameit
+#   end
+#  end
+#
+# end
