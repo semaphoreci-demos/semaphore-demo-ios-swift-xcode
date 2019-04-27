@@ -7,8 +7,8 @@ Example Swift app and CI pipeline showing how to run iOS projects on
 
 Requires:
 
-- Xcode 10.1
-- Swift 4.2
+- Xcode 10.2
+- Swift 5
 - Uses [Fastlane](https://fastlane.tools) as build automation tool
 
 ### Build locally

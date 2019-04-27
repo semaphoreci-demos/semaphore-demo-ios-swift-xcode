@@ -16,6 +16,12 @@
 default_platform(:ios)
 
 platform :ios do
+
+  before_all do
+    # installed via the semaphore plugin with `fastlane add_plugin semaphore`
+    setup_semaphore
+  end
+
   desc "Run Tests"
   lane :test do
     scan
@@ -25,7 +31,6 @@ platform :ios do
   desc "Build without code sign. Just to see if the build is working"
   lane :build do |options|
     gym(
-      xcargs: "CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO",
       scheme: "HelloWorld",
       skip_package_ipa: true,
       clean: true
@@ -34,13 +39,6 @@ platform :ios do
 
   desc "Installs the certificates and profiles locally"
   lane :certificates do |options|
-    if options[:use_temporary_keychain]
-      create_temporary_keychain
-      sh "security default-keychain -s #{ENV["KEYCHAIN_NAME"]}"
-    end
-
-    readonly = true
-
     # match(
     #   git_branch: "SemaphoreCI",
     #   app_identifier: "com.semaphoreci.ios-example",
@@ -57,27 +55,6 @@ platform :ios do
     #   type: "appstore",
     #   readonly: readonly
     # )
-
-
-    if options[:use_temporary_keychain]
-      sh "security set-key-partition-list -S apple-tool:,apple:,codesign: -s -k #{ENV["KEYCHAIN_NAME"]} #{ENV["KEYCHAIN_PASSWORD"]}"
-    end
-  end
-
-  private_lane :create_temporary_keychain do
-    keychain_name = "temporary_keychain.keychain"
-    ENV["KEYCHAIN_NAME"] = keychain_name
-    ENV["KEYCHAIN_PASSWORD"] = keychain_name
-    ENV["MATCH_KEYCHAIN_NAME"] = keychain_name
-    ENV["MATCH_KEYCHAIN_PASSWORD"] = keychain_name
-
-    create_keychain(
-      name: keychain_name,
-      default_keychain: true,
-      unlock: true,
-      timeout: false,
-      add_to_search_list: true
-    )
   end
 end
 

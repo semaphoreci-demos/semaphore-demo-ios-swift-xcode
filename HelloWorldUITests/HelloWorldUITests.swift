@@ -2,7 +2,7 @@
 //  HelloWorldUITests.swift
 //  HelloWorldUITests
 //
-//  Created by Lucas R on 11/03/2019.
+//  Created by Dmitry Bespalov on 27.04.19.
 //  Copyright © 2019 Lucas R. All rights reserved.
 //
 
