@@ -3,3 +3,5 @@ fastlane/test_output
 .bundle
 fastlane/report.xml
 *.swp
+build/
+xcuserdata/
