@@ -45,7 +45,7 @@ blocks:
           commands:
             # Select an Xcode version, for available versions
             # See https://docs.semaphoreci.com/article/120-macos-mojave-image
-            - bundle exec xcversion select 10.1
+            - bundle exec xcversion select 10.2
             # Run tests of iOS and Mac app on a simulator or connected device
             # See https://docs.fastlane.tools/actions/scan/
             - bundle exec fastlane test
@@ -64,11 +64,7 @@ blocks:
       jobs:
         - name: Fastlane build
           commands:
-            - bundle exec xcversion select 10.1
-            # Create a temporary keychain
-            # See https://docs.fastlane.tools/codesigning/getting-started/
-            # and https://docs.fastlane.tools/actions/create_keychain/
-            - bundle exec fastlane certificates refresh_certificates:true
+            - bundle exec xcversion select 10.2
             # Gym builds and packages iOS apps.
             # See https://docs.fastlane.tools/actions/build_app/
-            - bundle exec fastlane build use_temporary_keychain:true
+            - bundle exec fastlane build
