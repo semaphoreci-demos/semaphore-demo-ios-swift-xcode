@@ -8,6 +8,6 @@
 
 scheme "HelloWorld"
 
-sdk "iphoneos12.1"
+sdk "iphoneos12.2"
 
 output_directory "./"
