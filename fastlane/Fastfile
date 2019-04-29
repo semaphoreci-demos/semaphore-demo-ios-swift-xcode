@@ -31,6 +31,7 @@ platform :ios do
   desc "Build without code sign. Just to see if the build is working"
   lane :build do |options|
     gym(
+      xcargs: "CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO",
       scheme: "HelloWorld",
       skip_package_ipa: true,
       clean: true
