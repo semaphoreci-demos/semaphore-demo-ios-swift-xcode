@@ -5,3 +5,4 @@ fastlane/report.xml
 *.swp
 build/
 xcuserdata/
+vendor/gems
