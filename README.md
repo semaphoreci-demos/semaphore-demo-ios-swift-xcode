@@ -5,25 +5,34 @@ Example Swift app and CI pipeline showing how to run iOS projects on
 
 ## App overview
 
-Requires:
+Requirements:
 
-- Xcode 10.2
-- Swift 5
-- Uses [Fastlane](https://fastlane.tools) as build automation tool
+- Xcode 11.1
+- [Fastlane](https://fastlane.tools)
 
-### Build locally
+### Build the sample project locally
 
-#### Xcode
+Before building, open `HelloWorld.xcodeproj` and set the Development team for each of the `HelloWorld`, `HelloWorldTests`, and `HelloWorldUITests` targets:
+
+1. Select the `HelloWorld` project in the Project navigator.
+2. Switch to the "Signing & Capabilities" tab.
+3. Select each target in turn and select a valid development team in the "Signing" settings.
+
+#### Building and testing with Xcode
+
+To build the project and run the tests with Xcode locally, run the following command:
 
 ```
-xcodebuild clean test -project HelloWorld.xcodeproj -scheme HelloWorld -destination "platform=iOS Simulator,OS=12.1,name=iPhone XR"
+xcodebuild clean test -project HelloWorld.xcodeproj -scheme HelloWorld -destination "platform=iOS Simulator,OS=13.1,name=iPhone 11"
 ```
 
-#### Fastlane
+#### Building and testing with Fastlane
+
+To build the project and run the tests locally with Fastlane, run the following commands:
 
 ```
 bundle install --path vendor/gems
-bundle exec fastlane ios scan
+bundle exec fastlane ios test
 bundle exec fastlane ios build
 ```
 
