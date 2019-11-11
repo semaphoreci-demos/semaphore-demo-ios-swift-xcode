@@ -1,0 +1,32 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+default_platform(:ios)
+
+before_all do
+  # Install with `fastlane add_plugin semaphore`
+  setup_semaphore
+end
+
+platform :ios do
+  lane :build do
+    gym(scheme: 'TallestTowers',
+        skip_package_ipa: true,
+        skip_archive: true,
+        clean: true)
+  end
+
+  lane :test do
+    run_tests(scheme: 'TallestTowers',
+              devices: ['iPhone 8', 'iPhone 11 Pro'])
+  end
+end
