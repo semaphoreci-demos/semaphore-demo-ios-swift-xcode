@@ -60,6 +60,7 @@
 		552B707D236B5D9300ACC210 /* Pluginfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Pluginfile; sourceTree = "<group>"; };
 		552B707E236B5D9300ACC210 /* Appfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Appfile; sourceTree = "<group>"; };
 		552B707F236B5D9300ACC210 /* Fastfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Fastfile; sourceTree = "<group>"; };
+		5535C7922382EFF100E65B03 /* Gymfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gymfile; sourceTree = "<group>"; };
 		55AE65672360A0D60064B1AB /* semaphore.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = semaphore.yml; sourceTree = "<group>"; };
 		55CFADD5235F44380067DBB7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		55CFADD7235F860E0067DBB7 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -176,8 +177,9 @@
 		552B7079236B5D9300ACC210 /* fastlane */ = {
 			isa = PBXGroup;
 			children = (
-				552B707E236B5D9300ACC210 /* Appfile */,
 				552B707F236B5D9300ACC210 /* Fastfile */,
+				552B707E236B5D9300ACC210 /* Appfile */,
+				5535C7922382EFF100E65B03 /* Gymfile */,
 				552B707D236B5D9300ACC210 /* Pluginfile */,
 			);
 			path = fastlane;

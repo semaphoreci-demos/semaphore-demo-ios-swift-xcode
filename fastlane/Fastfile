@@ -19,10 +19,8 @@ end
 
 platform :ios do
   lane :build do
-    gym(scheme: 'TallestTowers',
-        skip_package_ipa: true,
-        skip_archive: true,
-        clean: true)
+    # Options for gym are being specified in a Gymfile
+    gym
   end
 
   lane :test do
