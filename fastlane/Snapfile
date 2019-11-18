@@ -7,3 +7,4 @@ devices([
 
 clear_previous_screenshots(true)
 output_directory("screenshots")
+skip_open_summary(true)
