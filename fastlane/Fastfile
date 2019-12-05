@@ -19,9 +19,8 @@ end
 
 platform :ios do
   lane :build do
+    match(type: 'adhoc')
     gym(scheme: 'TallestTowers',
-        skip_package_ipa: true,
-        skip_archive: true,
         clean: true)
   end
 
