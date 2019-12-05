@@ -54,7 +54,7 @@ At this point, if everything is configured correctly you should have a `TallestT
 
 To run the CI for this sample app on Semaphore, fork this repository and add it as a new project from [your Semaphore dashboard](https://id.semaphoreci.com/init_auth).
 
-Semaphore pipelines are made up of blocks executed in sequence that are configured in a `.semaphore/semaphore.yml` file in the root of your project. The [pipeline configuration for this sample project](.semaphore/semaphore.yml) is fully commented, and has been configured to build and archive the application, run tests, and generate App Store Screenshots. The IPA archive and App Store screenshots are all uploaded as [artifacts](https://docs.semaphoreci.com/article/155-artifacts).
+Semaphore pipelines are made up of blocks executed in sequence that are configured in a `.semaphore/semaphore.yml` file in the root of your project. The [pipeline configuration for this sample project](.semaphore/semaphore.yml) is fully commented, and has been configured to run all tests, build and archive the application as an IPA file, and generate App Store Screenshots. The IPA archive and App Store screenshots are all uploaded as [artifacts](https://docs.semaphoreci.com/article/155-artifacts).
 
 For more information on the full cabilities of the `semaphore.yml` configuration file, [see the documentation](https://docs.semaphoreci.com/article/50-pipeline-yaml).
 
