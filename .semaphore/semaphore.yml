@@ -61,8 +61,18 @@ blocks:
       env_vars:
         - name: LANG
           value: en_US.UTF-8
+      secrets:
+        # Mount the secret repository
+        # See https://docs.semaphoreci.com/article/109-using-private-dependencies
+        - name: private-repo
       prologue:
         commands:
+          # Add the key for the secret repository to ssh
+          # See https://docs.semaphoreci.com/article/109-using-private-dependencies
+          - chmod 0600 ~/.keys/*
+          - ssh-add ~/.keys/*
+
+          # Continue with checkout as normal
           - checkout
           - cache restore
           - bundle install --path vendor/bundle
