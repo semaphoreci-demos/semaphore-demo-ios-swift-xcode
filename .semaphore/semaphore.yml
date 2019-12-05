@@ -64,10 +64,10 @@ blocks:
       secrets:
         # Mount the secret repository
         # See https://docs.semaphoreci.com/article/109-using-private-dependencies
-        - name: private-repo
+        - name: certificate-repo
       prologue:
         commands:
-          # Add the key for the secret repository to ssh
+          # Add the key for the match certificate repository to ssh
           # See https://docs.semaphoreci.com/article/109-using-private-dependencies
           - chmod 0600 ~/.keys/*
           - ssh-add ~/.keys/*
