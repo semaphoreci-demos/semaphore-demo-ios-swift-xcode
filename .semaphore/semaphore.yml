@@ -72,6 +72,9 @@ blocks:
           commands:
             - bundle exec xcversion select 11.2.1
             - bundle exec fastlane build
+
+            # Upload the IPA file as a job artifact.
+            # See https://docs.semaphoreci.com/article/155-artifacts
             - artifact push job TallestTowers.ipa
   - name: Take screenshots
     task:
@@ -89,4 +92,7 @@ blocks:
           commands:
             - bundle exec xcversion select 11.2.1
             - bundle exec fastlane screenshots
+
+            # Upload the screenshots directory as a project artifact.
+            # See https://docs.semaphoreci.com/article/155-artifacts
             - artifact push project screenshots
