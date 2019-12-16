@@ -62,15 +62,16 @@ blocks:
         - name: LANG
           value: en_US.UTF-8
       secrets:
-        # Mount the secret repository
+        # Make the SSH key for the certificate repository and the MATCH_PASSWORD
+        # environment variable available.
         # See https://docs.semaphoreci.com/article/109-using-private-dependencies
-        - name: certificate-repo
+        - name: match-secrets
       prologue:
         commands:
           # Add the key for the match certificate repository to ssh
           # See https://docs.semaphoreci.com/article/109-using-private-dependencies
-          - chmod 0600 ~/.keys/*
-          - ssh-add ~/.keys/*
+          - chmod 0600 ~/.ssh/*
+          - ssh-add ~/.ssh/match-repository-private-key
 
           # Continue with checkout as normal
           - checkout
