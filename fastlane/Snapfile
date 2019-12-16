@@ -1,0 +1,10 @@
+scheme("TakeScreenshots")
+
+devices([
+  "iPhone 8",
+  "iPhone 11 Pro"
+])
+
+clear_previous_screenshots(true)
+output_directory("screenshots")
+skip_open_summary(true)

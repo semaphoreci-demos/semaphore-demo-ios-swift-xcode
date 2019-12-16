@@ -26,6 +26,11 @@ fastlane ios build
 fastlane ios test
 ```
 
+### ios screenshots
+```
+fastlane ios screenshots
+```
+
 
 ----
 

@@ -19,12 +19,15 @@ end
 
 platform :ios do
   lane :build do
-    # Options for gym are being specified in a Gymfile
-    gym
+    match(type: 'adhoc')
+    gym(scheme: 'TallestTowers', clean: true)
   end
 
   lane :test do
-    run_tests(scheme: 'TallestTowers',
-              devices: ['iPhone 8', 'iPhone 11 Pro'])
+    run_tests(scheme: 'TallestTowers', devices: ['iPhone 8', 'iPhone 11 Pro'])
+  end
+
+  lane :screenshots do
+    snapshot
   end
 end

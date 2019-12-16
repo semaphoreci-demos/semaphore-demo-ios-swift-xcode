@@ -18,6 +18,8 @@
 		5519C171234E33440022E332 /* TowerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5519C170234E33440022E332 /* TowerTests.swift */; };
 		5519C17C234E33440022E332 /* TallestTowersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5519C17B234E33440022E332 /* TallestTowersUITests.swift */; };
 		5519C18A234E35880022E332 /* Tower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5519C189234E35880022E332 /* Tower.swift */; };
+		5535C79A2382FF7B00E65B03 /* TallestTowersScreenshots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5535C7992382FF7B00E65B03 /* TallestTowersScreenshots.swift */; };
+		5535C7A22382FFD400E65B03 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5535C7A12382FFD400E65B03 /* SnapshotHelper.swift */; };
 		55CFADD6235F44390067DBB7 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 55CFADD5235F44380067DBB7 /* README.md */; };
 		55CFADD8235F860E0067DBB7 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 55CFADD7235F860E0067DBB7 /* LICENSE */; };
 /* End PBXBuildFile section */
@@ -31,6 +33,13 @@
 			remoteInfo = TallestTowers;
 		};
 		5519C178234E33440022E332 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5519C14E234E33420022E332 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5519C155234E33420022E332;
+			remoteInfo = TallestTowers;
+		};
+		5535C79C2382FF7B00E65B03 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5519C14E234E33420022E332 /* Project object */;
 			proxyType = 1;
@@ -60,10 +69,15 @@
 		552B707D236B5D9300ACC210 /* Pluginfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Pluginfile; sourceTree = "<group>"; };
 		552B707E236B5D9300ACC210 /* Appfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Appfile; sourceTree = "<group>"; };
 		552B707F236B5D9300ACC210 /* Fastfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Fastfile; sourceTree = "<group>"; };
-		5535C7922382EFF100E65B03 /* Gymfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gymfile; sourceTree = "<group>"; };
+		5535C7972382FF7B00E65B03 /* TallestTowersScreenshots.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TallestTowersScreenshots.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5535C7992382FF7B00E65B03 /* TallestTowersScreenshots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TallestTowersScreenshots.swift; sourceTree = "<group>"; };
+		5535C79B2382FF7B00E65B03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5535C7A12382FFD400E65B03 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
+		5535C7A32383038C00E65B03 /* Snapfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Snapfile; sourceTree = "<group>"; };
 		55AE65672360A0D60064B1AB /* semaphore.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = semaphore.yml; sourceTree = "<group>"; };
 		55CFADD5235F44380067DBB7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		55CFADD7235F860E0067DBB7 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		55FC950923995EA6008108F0 /* Matchfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Matchfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +96,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		5519C174234E33440022E332 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5535C7942382FF7B00E65B03 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -129,6 +150,7 @@
 				5519C158234E33420022E332 /* TallestTowers */,
 				5519C16F234E33440022E332 /* TallestTowersTests */,
 				5519C17A234E33440022E332 /* TallestTowersUITests */,
+				5535C7982382FF7B00E65B03 /* TallestTowersScreenshots */,
 				5519C157234E33420022E332 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -139,6 +161,7 @@
 				5519C156234E33420022E332 /* TallestTowers.app */,
 				5519C16C234E33440022E332 /* TallestTowersTests.xctest */,
 				5519C177234E33440022E332 /* TallestTowersUITests.xctest */,
+				5535C7972382FF7B00E65B03 /* TallestTowersScreenshots.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -177,12 +200,23 @@
 		552B7079236B5D9300ACC210 /* fastlane */ = {
 			isa = PBXGroup;
 			children = (
-				552B707F236B5D9300ACC210 /* Fastfile */,
 				552B707E236B5D9300ACC210 /* Appfile */,
-				5535C7922382EFF100E65B03 /* Gymfile */,
+				552B707F236B5D9300ACC210 /* Fastfile */,
+				55FC950923995EA6008108F0 /* Matchfile */,
+				5535C7A32383038C00E65B03 /* Snapfile */,
 				552B707D236B5D9300ACC210 /* Pluginfile */,
 			);
 			path = fastlane;
+			sourceTree = "<group>";
+		};
+		5535C7982382FF7B00E65B03 /* TallestTowersScreenshots */ = {
+			isa = PBXGroup;
+			children = (
+				5535C7A12382FFD400E65B03 /* SnapshotHelper.swift */,
+				5535C7992382FF7B00E65B03 /* TallestTowersScreenshots.swift */,
+				5535C79B2382FF7B00E65B03 /* Info.plist */,
+			);
+			path = TallestTowersScreenshots;
 			sourceTree = "<group>";
 		};
 		55AE65662360A0D60064B1AB /* .semaphore */ = {
@@ -249,13 +283,31 @@
 			productReference = 5519C177234E33440022E332 /* TallestTowersUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		5535C7962382FF7B00E65B03 /* TallestTowersScreenshots */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5535C7A02382FF7B00E65B03 /* Build configuration list for PBXNativeTarget "TallestTowersScreenshots" */;
+			buildPhases = (
+				5535C7932382FF7B00E65B03 /* Sources */,
+				5535C7942382FF7B00E65B03 /* Frameworks */,
+				5535C7952382FF7B00E65B03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5535C79D2382FF7B00E65B03 /* PBXTargetDependency */,
+			);
+			name = TallestTowersScreenshots;
+			productName = TallestTowersScreenshots;
+			productReference = 5535C7972382FF7B00E65B03 /* TallestTowersScreenshots.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		5519C14E234E33420022E332 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1110;
+				LastSwiftUpdateCheck = 1120;
 				LastUpgradeCheck = 1110;
 				ORGANIZATIONNAME = "Semaphore CI";
 				TargetAttributes = {
@@ -268,6 +320,10 @@
 					};
 					5519C176234E33440022E332 = {
 						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 5519C155234E33420022E332;
+					};
+					5535C7962382FF7B00E65B03 = {
+						CreatedOnToolsVersion = 11.2.1;
 						TestTargetID = 5519C155234E33420022E332;
 					};
 				};
@@ -288,6 +344,7 @@
 				5519C155234E33420022E332 /* TallestTowers */,
 				5519C16B234E33440022E332 /* TallestTowersTests */,
 				5519C176234E33440022E332 /* TallestTowersUITests */,
+				5535C7962382FF7B00E65B03 /* TallestTowersScreenshots */,
 			);
 		};
 /* End PBXProject section */
@@ -312,6 +369,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		5519C175234E33440022E332 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5535C7952382FF7B00E65B03 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -351,6 +415,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5535C7932382FF7B00E65B03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5535C79A2382FF7B00E65B03 /* TallestTowersScreenshots.swift in Sources */,
+				5535C7A22382FFD400E65B03 /* SnapshotHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -363,6 +436,11 @@
 			isa = PBXTargetDependency;
 			target = 5519C155234E33420022E332 /* TallestTowers */;
 			targetProxy = 5519C178234E33440022E332 /* PBXContainerItemProxy */;
+		};
+		5535C79D2382FF7B00E65B03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5519C155234E33420022E332 /* TallestTowers */;
+			targetProxy = 5535C79C2382FF7B00E65B03 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -497,7 +575,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = TallestTowers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -516,7 +593,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = TallestTowers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -610,6 +686,44 @@
 			};
 			name = Release;
 		};
+		5535C79E2382FF7B00E65B03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TallestTowersScreenshots/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.semaphoreci.TallestTowersScreenshots;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TallestTowers;
+			};
+			name = Debug;
+		};
+		5535C79F2382FF7B00E65B03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TallestTowersScreenshots/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.semaphoreci.TallestTowersScreenshots;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TallestTowers;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -645,6 +759,15 @@
 			buildConfigurations = (
 				5519C187234E33440022E332 /* Debug */,
 				5519C188234E33440022E332 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5535C7A02382FF7B00E65B03 /* Build configuration list for PBXNativeTarget "TallestTowersScreenshots" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5535C79E2382FF7B00E65B03 /* Debug */,
+				5535C79F2382FF7B00E65B03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
