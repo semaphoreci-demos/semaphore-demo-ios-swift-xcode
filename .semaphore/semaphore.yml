@@ -105,4 +105,4 @@ blocks:
 
             # Upload the screenshots directory as a project artifact.
             # See https://docs.semaphoreci.com/article/155-artifacts
-            - artifact push project screenshots
+            - artifact push job screenshots
