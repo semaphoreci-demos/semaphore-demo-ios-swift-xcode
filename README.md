@@ -27,7 +27,7 @@ Then, open the `Matchfile` in the `fastlane` folder and make the following edits
 
 Finally, generate ad hoc signing certificates and provisioning profiles. Open Terminal and run:
 
-```
+```shell
 bundle exec fastlane match adhoc
 ```
 
@@ -41,7 +41,7 @@ Now that code signing is configured, you should be able to test the CI pipeline 
 
 To run the CI pipeline locally, execute the following commands from the project directory in Terminal:
 
-```
+```shell
 bundle install --path vendor/gems
 bundle exec fastlane build
 bundle exec fastlane test
