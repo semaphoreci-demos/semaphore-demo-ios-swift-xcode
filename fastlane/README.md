@@ -16,23 +16,21 @@ or alternatively using `brew cask install fastlane`
 
 # Available Actions
 ## iOS
-### ios test
-```
-fastlane ios test
-```
-Run Tests
 ### ios build
 ```
 fastlane ios build
 ```
-Build
 
-Build without code sign. Just to see if the build is working
-### ios certificates
+### ios test
 ```
-fastlane ios certificates
+fastlane ios test
 ```
-Installs the certificates and profiles locally
+
+### ios screenshots
+```
+fastlane ios screenshots
+```
+
 
 ----
 

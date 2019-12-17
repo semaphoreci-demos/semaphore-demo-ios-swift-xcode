@@ -1,0 +1,778 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		55088B87234F444C006CF75A /* TowersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55088B86234F444C006CF75A /* TowersView.swift */; };
+		55088B89234F45AF006CF75A /* TowerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55088B88234F45AF006CF75A /* TowerRow.swift */; };
+		55088B8B234F4EEB006CF75A /* TowerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55088B8A234F4EEB006CF75A /* TowerDetailView.swift */; };
+		55088B8D234F4F7D006CF75A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55088B8C234F4F7D006CF75A /* MapView.swift */; };
+		5519C15A234E33420022E332 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5519C159234E33420022E332 /* AppDelegate.swift */; };
+		5519C15C234E33420022E332 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5519C15B234E33420022E332 /* SceneDelegate.swift */; };
+		5519C160234E33430022E332 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5519C15F234E33430022E332 /* Assets.xcassets */; };
+		5519C166234E33430022E332 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5519C164234E33430022E332 /* LaunchScreen.storyboard */; };
+		5519C171234E33440022E332 /* TowerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5519C170234E33440022E332 /* TowerTests.swift */; };
+		5519C17C234E33440022E332 /* TallestTowersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5519C17B234E33440022E332 /* TallestTowersUITests.swift */; };
+		5519C18A234E35880022E332 /* Tower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5519C189234E35880022E332 /* Tower.swift */; };
+		5535C79A2382FF7B00E65B03 /* TallestTowersScreenshots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5535C7992382FF7B00E65B03 /* TallestTowersScreenshots.swift */; };
+		5535C7A22382FFD400E65B03 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5535C7A12382FFD400E65B03 /* SnapshotHelper.swift */; };
+		55CFADD6235F44390067DBB7 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 55CFADD5235F44380067DBB7 /* README.md */; };
+		55CFADD8235F860E0067DBB7 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 55CFADD7235F860E0067DBB7 /* LICENSE */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5519C16D234E33440022E332 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5519C14E234E33420022E332 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5519C155234E33420022E332;
+			remoteInfo = TallestTowers;
+		};
+		5519C178234E33440022E332 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5519C14E234E33420022E332 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5519C155234E33420022E332;
+			remoteInfo = TallestTowers;
+		};
+		5535C79C2382FF7B00E65B03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5519C14E234E33420022E332 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5519C155234E33420022E332;
+			remoteInfo = TallestTowers;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		55088B86234F444C006CF75A /* TowersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TowersView.swift; sourceTree = "<group>"; };
+		55088B88234F45AF006CF75A /* TowerRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TowerRow.swift; sourceTree = "<group>"; };
+		55088B8A234F4EEB006CF75A /* TowerDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TowerDetailView.swift; sourceTree = "<group>"; };
+		55088B8C234F4F7D006CF75A /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		5519C156234E33420022E332 /* TallestTowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TallestTowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5519C159234E33420022E332 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5519C15B234E33420022E332 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5519C15F234E33430022E332 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5519C165234E33430022E332 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5519C167234E33430022E332 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5519C16C234E33440022E332 /* TallestTowersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TallestTowersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5519C170234E33440022E332 /* TowerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TowerTests.swift; sourceTree = "<group>"; };
+		5519C172234E33440022E332 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5519C177234E33440022E332 /* TallestTowersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TallestTowersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5519C17B234E33440022E332 /* TallestTowersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TallestTowersUITests.swift; sourceTree = "<group>"; };
+		5519C17D234E33440022E332 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5519C189234E35880022E332 /* Tower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tower.swift; sourceTree = "<group>"; };
+		552B707D236B5D9300ACC210 /* Pluginfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Pluginfile; sourceTree = "<group>"; };
+		552B707E236B5D9300ACC210 /* Appfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Appfile; sourceTree = "<group>"; };
+		552B707F236B5D9300ACC210 /* Fastfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Fastfile; sourceTree = "<group>"; };
+		5535C7972382FF7B00E65B03 /* TallestTowersScreenshots.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TallestTowersScreenshots.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5535C7992382FF7B00E65B03 /* TallestTowersScreenshots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TallestTowersScreenshots.swift; sourceTree = "<group>"; };
+		5535C79B2382FF7B00E65B03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5535C7A12382FFD400E65B03 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
+		5535C7A32383038C00E65B03 /* Snapfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Snapfile; sourceTree = "<group>"; };
+		55AE65672360A0D60064B1AB /* semaphore.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = semaphore.yml; sourceTree = "<group>"; };
+		55CFADD5235F44380067DBB7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		55CFADD7235F860E0067DBB7 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		55FC950923995EA6008108F0 /* Matchfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Matchfile; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5519C153234E33420022E332 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5519C169234E33440022E332 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5519C174234E33440022E332 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5535C7942382FF7B00E65B03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		55088B8E234F678D006CF75A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5519C189234E35880022E332 /* Tower.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		55088B8F234F6799006CF75A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				55088B86234F444C006CF75A /* TowersView.swift */,
+				55088B88234F45AF006CF75A /* TowerRow.swift */,
+				55088B8A234F4EEB006CF75A /* TowerDetailView.swift */,
+				55088B8C234F4F7D006CF75A /* MapView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		55088B90234F67AC006CF75A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5519C159234E33420022E332 /* AppDelegate.swift */,
+				5519C15B234E33420022E332 /* SceneDelegate.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5519C14D234E33420022E332 = {
+			isa = PBXGroup;
+			children = (
+				55CFADD7235F860E0067DBB7 /* LICENSE */,
+				55CFADD5235F44380067DBB7 /* README.md */,
+				552B7079236B5D9300ACC210 /* fastlane */,
+				55AE65662360A0D60064B1AB /* .semaphore */,
+				5519C158234E33420022E332 /* TallestTowers */,
+				5519C16F234E33440022E332 /* TallestTowersTests */,
+				5519C17A234E33440022E332 /* TallestTowersUITests */,
+				5535C7982382FF7B00E65B03 /* TallestTowersScreenshots */,
+				5519C157234E33420022E332 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5519C157234E33420022E332 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5519C156234E33420022E332 /* TallestTowers.app */,
+				5519C16C234E33440022E332 /* TallestTowersTests.xctest */,
+				5519C177234E33440022E332 /* TallestTowersUITests.xctest */,
+				5535C7972382FF7B00E65B03 /* TallestTowersScreenshots.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5519C158234E33420022E332 /* TallestTowers */ = {
+			isa = PBXGroup;
+			children = (
+				55088B8E234F678D006CF75A /* Models */,
+				55088B90234F67AC006CF75A /* Controllers */,
+				55088B8F234F6799006CF75A /* Views */,
+				5519C15F234E33430022E332 /* Assets.xcassets */,
+				5519C164234E33430022E332 /* LaunchScreen.storyboard */,
+				5519C167234E33430022E332 /* Info.plist */,
+			);
+			path = TallestTowers;
+			sourceTree = "<group>";
+		};
+		5519C16F234E33440022E332 /* TallestTowersTests */ = {
+			isa = PBXGroup;
+			children = (
+				5519C170234E33440022E332 /* TowerTests.swift */,
+				5519C172234E33440022E332 /* Info.plist */,
+			);
+			path = TallestTowersTests;
+			sourceTree = "<group>";
+		};
+		5519C17A234E33440022E332 /* TallestTowersUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5519C17B234E33440022E332 /* TallestTowersUITests.swift */,
+				5519C17D234E33440022E332 /* Info.plist */,
+			);
+			path = TallestTowersUITests;
+			sourceTree = "<group>";
+		};
+		552B7079236B5D9300ACC210 /* fastlane */ = {
+			isa = PBXGroup;
+			children = (
+				552B707E236B5D9300ACC210 /* Appfile */,
+				552B707F236B5D9300ACC210 /* Fastfile */,
+				55FC950923995EA6008108F0 /* Matchfile */,
+				5535C7A32383038C00E65B03 /* Snapfile */,
+				552B707D236B5D9300ACC210 /* Pluginfile */,
+			);
+			path = fastlane;
+			sourceTree = "<group>";
+		};
+		5535C7982382FF7B00E65B03 /* TallestTowersScreenshots */ = {
+			isa = PBXGroup;
+			children = (
+				5535C7A12382FFD400E65B03 /* SnapshotHelper.swift */,
+				5535C7992382FF7B00E65B03 /* TallestTowersScreenshots.swift */,
+				5535C79B2382FF7B00E65B03 /* Info.plist */,
+			);
+			path = TallestTowersScreenshots;
+			sourceTree = "<group>";
+		};
+		55AE65662360A0D60064B1AB /* .semaphore */ = {
+			isa = PBXGroup;
+			children = (
+				55AE65672360A0D60064B1AB /* semaphore.yml */,
+			);
+			path = .semaphore;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5519C155234E33420022E332 /* TallestTowers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5519C180234E33440022E332 /* Build configuration list for PBXNativeTarget "TallestTowers" */;
+			buildPhases = (
+				5519C152234E33420022E332 /* Sources */,
+				5519C153234E33420022E332 /* Frameworks */,
+				5519C154234E33420022E332 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TallestTowers;
+			productName = TallestTowers;
+			productReference = 5519C156234E33420022E332 /* TallestTowers.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5519C16B234E33440022E332 /* TallestTowersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5519C183234E33440022E332 /* Build configuration list for PBXNativeTarget "TallestTowersTests" */;
+			buildPhases = (
+				5519C168234E33440022E332 /* Sources */,
+				5519C169234E33440022E332 /* Frameworks */,
+				5519C16A234E33440022E332 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5519C16E234E33440022E332 /* PBXTargetDependency */,
+			);
+			name = TallestTowersTests;
+			productName = TallestTowersTests;
+			productReference = 5519C16C234E33440022E332 /* TallestTowersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5519C176234E33440022E332 /* TallestTowersUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5519C186234E33440022E332 /* Build configuration list for PBXNativeTarget "TallestTowersUITests" */;
+			buildPhases = (
+				5519C173234E33440022E332 /* Sources */,
+				5519C174234E33440022E332 /* Frameworks */,
+				5519C175234E33440022E332 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5519C179234E33440022E332 /* PBXTargetDependency */,
+			);
+			name = TallestTowersUITests;
+			productName = TallestTowersUITests;
+			productReference = 5519C177234E33440022E332 /* TallestTowersUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		5535C7962382FF7B00E65B03 /* TallestTowersScreenshots */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5535C7A02382FF7B00E65B03 /* Build configuration list for PBXNativeTarget "TallestTowersScreenshots" */;
+			buildPhases = (
+				5535C7932382FF7B00E65B03 /* Sources */,
+				5535C7942382FF7B00E65B03 /* Frameworks */,
+				5535C7952382FF7B00E65B03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5535C79D2382FF7B00E65B03 /* PBXTargetDependency */,
+			);
+			name = TallestTowersScreenshots;
+			productName = TallestTowersScreenshots;
+			productReference = 5535C7972382FF7B00E65B03 /* TallestTowersScreenshots.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5519C14E234E33420022E332 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Semaphore CI";
+				TargetAttributes = {
+					5519C155234E33420022E332 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					5519C16B234E33440022E332 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 5519C155234E33420022E332;
+					};
+					5519C176234E33440022E332 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 5519C155234E33420022E332;
+					};
+					5535C7962382FF7B00E65B03 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 5519C155234E33420022E332;
+					};
+				};
+			};
+			buildConfigurationList = 5519C151234E33420022E332 /* Build configuration list for PBXProject "TallestTowers" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5519C14D234E33420022E332;
+			productRefGroup = 5519C157234E33420022E332 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5519C155234E33420022E332 /* TallestTowers */,
+				5519C16B234E33440022E332 /* TallestTowersTests */,
+				5519C176234E33440022E332 /* TallestTowersUITests */,
+				5535C7962382FF7B00E65B03 /* TallestTowersScreenshots */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5519C154234E33420022E332 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55CFADD6235F44390067DBB7 /* README.md in Resources */,
+				5519C166234E33430022E332 /* LaunchScreen.storyboard in Resources */,
+				55CFADD8235F860E0067DBB7 /* LICENSE in Resources */,
+				5519C160234E33430022E332 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5519C16A234E33440022E332 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5519C175234E33440022E332 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5535C7952382FF7B00E65B03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5519C152234E33420022E332 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55088B8D234F4F7D006CF75A /* MapView.swift in Sources */,
+				55088B87234F444C006CF75A /* TowersView.swift in Sources */,
+				5519C15A234E33420022E332 /* AppDelegate.swift in Sources */,
+				5519C15C234E33420022E332 /* SceneDelegate.swift in Sources */,
+				55088B8B234F4EEB006CF75A /* TowerDetailView.swift in Sources */,
+				55088B89234F45AF006CF75A /* TowerRow.swift in Sources */,
+				5519C18A234E35880022E332 /* Tower.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5519C168234E33440022E332 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5519C171234E33440022E332 /* TowerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5519C173234E33440022E332 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5519C17C234E33440022E332 /* TallestTowersUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5535C7932382FF7B00E65B03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5535C79A2382FF7B00E65B03 /* TallestTowersScreenshots.swift in Sources */,
+				5535C7A22382FFD400E65B03 /* SnapshotHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5519C16E234E33440022E332 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5519C155234E33420022E332 /* TallestTowers */;
+			targetProxy = 5519C16D234E33440022E332 /* PBXContainerItemProxy */;
+		};
+		5519C179234E33440022E332 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5519C155234E33420022E332 /* TallestTowers */;
+			targetProxy = 5519C178234E33440022E332 /* PBXContainerItemProxy */;
+		};
+		5535C79D2382FF7B00E65B03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5519C155234E33420022E332 /* TallestTowers */;
+			targetProxy = 5535C79C2382FF7B00E65B03 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5519C164234E33430022E332 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5519C165234E33430022E332 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5519C17E234E33440022E332 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5519C17F234E33440022E332 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5519C181234E33440022E332 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TallestTowers/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.semaphoreci.TallestTowers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5519C182234E33440022E332 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TallestTowers/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.semaphoreci.TallestTowers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5519C184234E33440022E332 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TallestTowersTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.semaphoreci.TallestTowersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TallestTowers.app/TallestTowers";
+			};
+			name = Debug;
+		};
+		5519C185234E33440022E332 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TallestTowersTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.semaphoreci.TallestTowersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TallestTowers.app/TallestTowers";
+			};
+			name = Release;
+		};
+		5519C187234E33440022E332 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TallestTowersUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.semaphoreci.TallestTowersUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TallestTowers;
+			};
+			name = Debug;
+		};
+		5519C188234E33440022E332 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TallestTowersUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.semaphoreci.TallestTowersUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TallestTowers;
+			};
+			name = Release;
+		};
+		5535C79E2382FF7B00E65B03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TallestTowersScreenshots/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.semaphoreci.TallestTowersScreenshots;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TallestTowers;
+			};
+			name = Debug;
+		};
+		5535C79F2382FF7B00E65B03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TallestTowersScreenshots/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.semaphoreci.TallestTowersScreenshots;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TallestTowers;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5519C151234E33420022E332 /* Build configuration list for PBXProject "TallestTowers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5519C17E234E33440022E332 /* Debug */,
+				5519C17F234E33440022E332 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5519C180234E33440022E332 /* Build configuration list for PBXNativeTarget "TallestTowers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5519C181234E33440022E332 /* Debug */,
+				5519C182234E33440022E332 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5519C183234E33440022E332 /* Build configuration list for PBXNativeTarget "TallestTowersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5519C184234E33440022E332 /* Debug */,
+				5519C185234E33440022E332 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5519C186234E33440022E332 /* Build configuration list for PBXNativeTarget "TallestTowersUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5519C187234E33440022E332 /* Debug */,
+				5519C188234E33440022E332 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5535C7A02382FF7B00E65B03 /* Build configuration list for PBXNativeTarget "TallestTowersScreenshots" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5535C79E2382FF7B00E65B03 /* Debug */,
+				5535C79F2382FF7B00E65B03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5519C14E234E33420022E332 /* Project object */;
+}
