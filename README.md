@@ -81,7 +81,7 @@ Then, just push any change to your fork of this project and Semaphore will run t
 
 **Important Note:** If you receive the error message "Selected machine type is not available in this organization" after setting up this example project on Semaphore, ensure your account is on the Semaphore Pro plan. A 14 day free trial of this plan is available from your dashboard.
 
-This example Semaphore configuration uses an `a1-standard-4` machine running macOS Mojave with [Xcode 11.1, fastlane and other build tools pre-installed](https://docs.semaphoreci.com/article/162-macos-mojave-xcode-11-image). Other, larger machine types are [available if needed](https://docs.semaphoreci.com/article/20-machine-types).
+This example Semaphore configuration uses an `a1-standard-4` machine running macOS Mojave with [Xcode 11, fastlane and other build tools pre-installed](https://docs.semaphoreci.com/ci-cd-environment/macos-catalina-xcode-11-image/). Other, larger machine types are [available if needed](https://docs.semaphoreci.com/ci-cd-environment/machine-types/).
 
 ## License
 
