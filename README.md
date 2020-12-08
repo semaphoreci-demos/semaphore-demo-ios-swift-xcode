@@ -29,7 +29,7 @@ Then, generate ad hoc signing certificates and provisioning profiles. Quit Xcode
 
 ```shell
 bundle exec fastlane match adhoc
-```
+``` 
 
 Finally, open `TallestTowers.xcodeproj` with Xcode again and make the following changes:
 
