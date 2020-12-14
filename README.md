@@ -85,4 +85,4 @@ This example Semaphore configuration uses an `a1-standard-4` machine running mac
 
 ## License
 
-Copyright ©2019 Rendered Text – Distributed under the MIT License. See the [LICENSE](LICENSE) for full terms.
+Copyright ©2020 Rendered Text – Distributed under the MIT License. See the [LICENSE](LICENSE) for full terms.
