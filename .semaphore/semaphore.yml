@@ -42,6 +42,10 @@ blocks:
           # See https://docs.semaphoreci.com/article/68-caching-dependencies
           - cache restore
 
+
+          # TEmp inspect simulators
+          - xcrun simctl list
+
           # Make sure to first install the correct gem bundler
           # Look at the end of Gemfile.lock, under BUNDLED WITH
           # Depending the the version you are using, you might get this error
