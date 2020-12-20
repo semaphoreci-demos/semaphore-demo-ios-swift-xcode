@@ -41,13 +41,6 @@ blocks:
           # complete in about a second.
           # See https://docs.semaphoreci.com/article/68-caching-dependencies
           - cache restore
-
-          # Make sure to first install the correct gem bundler
-          # Look at the end of Gemfile.lock, under BUNDLED WITH
-          # Depending the the version you are using, you might get this error
-          #  `find_spec_for_exe': can't find gem bundler
-          # So, simply install the version here
-          - gem install bundler -v '2.1.4'
           - bundle install --path vendor/bundle
           - cache store
       jobs:
