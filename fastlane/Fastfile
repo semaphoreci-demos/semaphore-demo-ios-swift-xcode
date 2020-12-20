@@ -30,7 +30,7 @@ platform :ios do
   end
 
   lane :test do
-    run_tests(scheme: 'TallestTowers', devices: ['iPhone 8', 'iPhone 11 Pro'])
+    run_tests(scheme: 'TallestTowers', devices: ['iPhone 11 Pro'])
   end
 
   lane :screenshots do
