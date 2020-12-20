@@ -81,6 +81,8 @@ blocks:
           # Continue with checkout as normal
           - checkout
           - cache restore
+          # Just in case you hit into this 
+          # https://bundler.io/blog/2019/01/04/an-update-on-the-bundler-2-release.html
           - gem install bundler -v '2.1.4'
           - bundle install --path vendor/bundle
           - cache store
@@ -102,6 +104,8 @@ blocks:
         commands:
           - checkout
           - cache restore
+          # Just in case you hit into this 
+          # https://bundler.io/blog/2019/01/04/an-update-on-the-bundler-2-release.html
           - gem install bundler -v '2.1.4'
           - bundle install --path vendor/bundle
           - cache store
@@ -109,6 +113,12 @@ blocks:
         - name: Screenshots
           commands:
             - bundle exec xcversion select 12.2
+            # snapshot seems to sometimes be an issue with fastlane snapshot finding the simular. see runs:
+            # https://traynt.semaphoreci.com/jobs/99773826-f05a-4080-8555-b8515c7d5e90
+            # https://traynt.semaphoreci.com/jobs/e17cea1f-7be4-4736-97a8-7f5e8433c975
+            # thus running first the xcode tools to list the available simulators seems to work
+            - xcrun simctl list
+
             - bundle exec fastlane screenshots
 
             # Upload the screenshots directory as a project artifact.
