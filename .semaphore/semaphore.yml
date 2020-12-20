@@ -44,6 +44,9 @@ blocks:
 
           # Make sure to first install the correct gem bundler
           # Look at the end of Gemfile.lock, under BUNDLED WITH
+          # Depending the the version you are using, you might get this error
+          #  `find_spec_for_exe': can't find gem bundler
+          # So, simply install the version here
           - gem install bundler -v '2.1.4'
           - bundle install --path vendor/bundle
           - cache store
@@ -53,7 +56,7 @@ blocks:
             # Select an Xcode version.
             # See https://docs.semaphoreci.com/article/161-macos-mojave-xcode-10-image and
             # https://docs.semaphoreci.com/article/162-macos-mojave-xcode-11-image
-            - bundle exec xcversion select 12.0.1
+            # - bundle exec xcversion select 12.0.1
 
             # Run tests of iOS and Mac app on a simulator or connected device.
             # See https://docs.fastlane.tools/actions/scan/
@@ -83,7 +86,7 @@ blocks:
       jobs:
         - name: Build
           commands:
-            - bundle exec xcversion select 12.0.1
+            #- bundle exec xcversion select 12.0.1
             - bundle exec fastlane build
 
             # Upload the IPA file as a job artifact.
@@ -103,7 +106,7 @@ blocks:
       jobs:
         - name: Screenshots
           commands:
-            - bundle exec xcversion select 12.0.1
+            #- bundle exec xcversion select 12.0.1
             - bundle exec fastlane screenshots
 
             # Upload the screenshots directory as a project artifact.
