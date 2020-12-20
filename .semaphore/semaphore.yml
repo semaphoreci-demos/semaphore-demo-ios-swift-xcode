@@ -41,7 +41,7 @@ blocks:
           # complete in about a second.
           # See https://docs.semaphoreci.com/article/68-caching-dependencies
           - cache restore
-          
+
           # Make sure to first install the correct gem bundler
           # Look at the end of Gemfile.lock, under BUNDLED WITH
           # Depending the the version you are using, you might get this error
@@ -108,6 +108,7 @@ blocks:
       jobs:
         - name: Screenshots
           commands:
+            - xcrun simctl list
             #- bundle exec xcversion select 12.0.1
             - bundle exec fastlane screenshots
 
