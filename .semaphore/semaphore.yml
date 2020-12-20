@@ -56,7 +56,7 @@ blocks:
             # Select an Xcode version.
             # See https://docs.semaphoreci.com/article/161-macos-mojave-xcode-10-image and
             # https://docs.semaphoreci.com/article/162-macos-mojave-xcode-11-image
-            # - bundle exec xcversion select 12.0.1
+            - bundle exec xcversion select 12.2
 
             # Run tests of iOS and Mac app on a simulator or connected device.
             # See https://docs.fastlane.tools/actions/scan/
@@ -87,7 +87,7 @@ blocks:
       jobs:
         - name: Build
           commands:
-            #- bundle exec xcversion select 12.0.1
+            - bundle exec xcversion select 12.2
             - bundle exec fastlane build
 
             # Upload the IPA file as a job artifact.
@@ -108,8 +108,7 @@ blocks:
       jobs:
         - name: Screenshots
           commands:
-            - xcrun simctl list
-            #- bundle exec xcversion select 12.0.1
+            - bundle exec xcversion select 12.2
             - bundle exec fastlane screenshots
 
             # Upload the screenshots directory as a project artifact.
