@@ -65,17 +65,28 @@ blocks:
       env_vars:
         - name: LANG
           value: en_US.UTF-8
-      secrets:
-        # Make the SSH key for the certificate repository and the MATCH_PASSWORD
-        # environment variable available.
-        # See https://docs.semaphoreci.com/article/109-using-private-dependencies
-        - name: match-secrets
+
+##### Disable code signing for fork-and-run branch #####
+#
+#     secrets:
+#        # Make the SSH key for the certificate repository and the MATCH_PASSWORD
+#        # environment variable available.
+#        # See https://docs.semaphoreci.com/article/109-using-private-dependencies
+#       - name: match-secrets
+#
+##### End Disable #####
       prologue:
         commands:
-          # Add the key for the match certificate repository to ssh
-          # See https://docs.semaphoreci.com/article/109-using-private-dependencies
-          - chmod 0600 ~/.ssh/*
-          - ssh-add ~/.ssh/match-repository-private-key
+
+##### Disable code signing for fork-and-run branch #####
+#
+#         # Add the key for the match certificate repository to ssh
+#         # See https://docs.semaphoreci.com/article/109-using-private-dependencies
+#         - chmod 0600 ~/.ssh/*
+#         - ssh-add ~/.ssh/match-repository-private-key
+#
+##### End Disable #####
+
           # Continue with checkout as normal
           - checkout
           - cache restore
@@ -93,9 +104,14 @@ blocks:
             - bundle exec xcversion select 12.2
             - bundle exec fastlane build
 
-            # Upload the IPA file as a job artifact.
-            # See https://docs.semaphoreci.com/article/155-artifacts
-            - artifact push job build/TallestTowers.ipa
+##### Disable code signing for fork-and-run branch #####
+#
+#           # Upload the IPA file as a job artifact.
+#           # See https://docs.semaphoreci.com/article/155-artifacts
+#           - artifact push job build/TallestTowers.ipa
+#
+##### End Disable #####
+
   - name: Take screenshots
     task:
       env_vars:

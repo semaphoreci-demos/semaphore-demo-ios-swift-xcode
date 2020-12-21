@@ -19,8 +19,23 @@ end
 
 platform :ios do
   lane :build do
-    match(type: 'adhoc')
-    gym(scheme: 'TallestTowers', clean: true)
+
+##### Disable code signing for fork-and-run branch #####
+#
+#    match(type: 'adhoc')
+#    gym(scheme: 'TallestTowers', clean: true)
+#
+##### End Disable #####
+
+    # Enable testing and snapshoting without codesigning
+    build_app(scheme: 'TallestTowers', 
+      skip_package_ipa: true,
+      skip_archive: true,
+      skip_codesigning: true,
+      xcargs: "ONLY_ACTIVE_ARCH=YES", # since for this demo we skip_codesigning, the build will be done for a simulator, and since XCode 12, this means arm64, thus build failing. Semaphore is running on x86 chips.
+      silent: true,
+      clean: true
+    )
   end
 
   lane :test do
