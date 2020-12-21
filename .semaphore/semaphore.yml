@@ -95,7 +95,7 @@ blocks:
 
             # Upload the IPA file as a job artifact.
             # See https://docs.semaphoreci.com/article/155-artifacts
-            #- artifact push job build/TallestTowers.ipa
+            - artifact push job build/TallestTowers.ipa
   - name: Take screenshots
     task:
       env_vars:
