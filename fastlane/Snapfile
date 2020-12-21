@@ -1,7 +1,6 @@
 scheme("TakeScreenshots")
 
 devices([
-  "iPhone 8",
   "iPhone 11 Pro"
 ])
 
