@@ -98,4 +98,4 @@ so you can clearly see what has been removed.
 
 ## License
 
-Copyright ©2020 Rendered Text – Distributed under the MIT License. See the [LICENSE](LICENSE) for full terms.
+Copyright ©2021 Rendered Text – Distributed under the MIT License. See the [LICENSE](LICENSE) for full terms.
