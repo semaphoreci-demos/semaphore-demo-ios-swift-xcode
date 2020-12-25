@@ -83,6 +83,19 @@ Then, just push any change to your fork of this project and Semaphore will run t
 
 This example Semaphore configuration uses an `a1-standard-4` machine running macOS Mojave with [Xcode 11, fastlane and other build tools pre-installed](https://docs.semaphoreci.com/ci-cd-environment/macos-catalina-xcode-11-image/). Other, larger machine types are [available if needed](https://docs.semaphoreci.com/ci-cd-environment/machine-types/).
 
+## Fork-and-Run VS Master branch
+
+The `master` branch represents a template you can follow to setup your own project on Semaphore. That being said, running it directly on your own account would require first setting the public/private keys as describe in the [Run the CI pipeline on Semaphore](#run-the-ci-pipeline-on-semaphore) section.
+
+For simplicity, on the `fork-and-run` branch we disabled the signing capabilities of this template project so you can safely `fork` and imediatelly `run` it on Semaphore.
+
+The lines that have been commented out for this purpose are clearly marked as 
+
+```##### Disable code signing for fork-and-run branch ######```
+
+so you can clearly see what has been removed.
+
+
 ## License
 
 Copyright ©2019 Rendered Text – Distributed under the MIT License. See the [LICENSE](LICENSE) for full terms.
