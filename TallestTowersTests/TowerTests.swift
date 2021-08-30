@@ -24,6 +24,6 @@ class TowerInstanceTests: XCTestCase {
 
 class TowerStaticTests: XCTestCase {
   func testTallestTowersShouldNotBeEmpty() {
-    XCTAssert(Tower.tallestTowers.isEmpty > 0)
+    XCTAssert(!Tower.tallestTowers.isEmpty > 0)
   }
 }
