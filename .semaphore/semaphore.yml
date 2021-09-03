@@ -65,21 +65,20 @@ blocks:
       env_vars:
         - name: LANG
           value: en_US.UTF-8
-      secrets:
+      # secrets:
         # Make the SSH key for the certificate repository and the MATCH_PASSWORD
         # environment variable available.
         # See https://docs.semaphoreci.com/article/109-using-private-dependencies
-        - name: match-secrets
+        # - name: match-secrets
       prologue:
         commands:
           # Add the key for the match certificate repository to ssh
           # See https://docs.semaphoreci.com/article/109-using-private-dependencies
-          - chmod 0600 ~/.ssh/*
-          - ssh-add ~/.ssh/match-repository-private-key
+          # - chmod 0600 ~/.ssh/*
+          # - ssh-add ~/.ssh/match-repository-private-key
           # Continue with checkout as normal
           - checkout
           - cache restore
-          
 
           # Fix for: `find_spec_for_exe': can't find gem bundler erro
           # Look at the end of Gemfile.lock, under BUNDLED WITH
@@ -95,7 +94,7 @@ blocks:
 
             # Upload the IPA file as a job artifact.
             # See https://docs.semaphoreci.com/article/155-artifacts
-            - artifact push job build/TallestTowers.ipa
+            # - artifact push job build/TallestTowers.ipa
   - name: Take screenshots
     task:
       env_vars:
@@ -105,7 +104,7 @@ blocks:
         commands:
           - checkout
           - cache restore
-          
+
           # Fix for: `find_spec_for_exe': can't find gem bundler erro
           # Look at the end of Gemfile.lock, under BUNDLED WITH
           # and simply install the required version before calling bundle install
