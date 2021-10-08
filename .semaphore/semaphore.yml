@@ -21,7 +21,7 @@ blocks:
         - name: Test
           commands:
             - xcodebuild -version
-            - xcversion select 12.2
+            - xcversion select 12.5.1
             - bundle exec fastlane test
   - name: Build app
     task:
