@@ -20,7 +20,7 @@ blocks:
       jobs:
         - name: Test
           commands:
-            - mdfind "kMDItemCFBundleIdentifier = 'com.apple.dt.Xcode'"
+            - xcodebuild -version
             - xcversion select 12.2
             - bundle exec fastlane test
   - name: Build app
