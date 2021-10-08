@@ -54,7 +54,7 @@ blocks:
             # Select an Xcode version.
             # See https://docs.semaphoreci.com/article/161-macos-mojave-xcode-10-image and
             # https://docs.semaphoreci.com/article/162-macos-mojave-xcode-11-image
-            - bundle exec xcversion select 12.2
+            - bundle exec xcversion select 12.5
 
             # Run tests of iOS and Mac app on a simulator or connected device.
             # See https://docs.fastlane.tools/actions/scan/
