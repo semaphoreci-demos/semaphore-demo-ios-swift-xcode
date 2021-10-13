@@ -52,9 +52,8 @@ blocks:
         - name: Test
           commands:
             # Select an Xcode version.
-            # See https://docs.semaphoreci.com/article/161-macos-mojave-xcode-10-image and
-            # https://docs.semaphoreci.com/article/162-macos-mojave-xcode-11-image
-            - bundle exec xcversion select 12.2
+            # See https://docs.semaphoreci.com/ci-cd-environment/macos-xcode-12-image/
+            - xcversion select 12.4
 
             # Run tests of iOS and Mac app on a simulator or connected device.
             # See https://docs.fastlane.tools/actions/scan/
@@ -101,7 +100,7 @@ blocks:
       jobs:
         - name: Build
           commands:
-            - bundle exec xcversion select 12.2
+            - xcversion select 12.4
             - bundle exec fastlane build
 
 ##### Disable code signing for fork-and-run branch #####
@@ -131,7 +130,7 @@ blocks:
       jobs:
         - name: Screenshots
           commands:
-            - bundle exec xcversion select 12.2
+            - xcversion select 12.4
 
             # Fix for fastlane snapshot not allways finding the simular.
             # In case you find errors like "Simulator not found", use this workarround
