@@ -23,7 +23,7 @@ struct Tower: Identifiable {
   }
   
   static var tallestTowers: [ Tower ] {
-    [ Tower(name: "Swamy", city: "Dubai", country: "United Arab Emirates", height: 828, yearBuilt: 2010, latitude: 25.186016587, longitude: 55.275198221),
+    [ Tower(name: "Swamy1", city: "Dubai", country: "United Arab Emirates", height: 828, yearBuilt: 2010, latitude: 25.186016587, longitude: 55.275198221),
       Tower(name: "Shanghai Tower", city: "Shanghai", country: "China", height: 632, yearBuilt: 2015, latitude: 31.226676271, longitude: 121.501873778),
       Tower(name: "Abraj Al-Bait Clock Tower", city: "Mecca", country: "Saudi Arabia", height: 601, yearBuilt: 2012, latitude: 21.413935301, longitude: 39.826183555),
       Tower(name: "Ping An Finance Center", city: "Shenzhen", country: "China", height: 599, yearBuilt: 2017, latitude: 22.532267288, longitude: 114.054613333),
