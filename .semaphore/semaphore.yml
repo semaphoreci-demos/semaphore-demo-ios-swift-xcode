@@ -20,7 +20,7 @@ blocks:
       jobs:
         - name: Test
           commands:
-            - xcversion select 13.4
+            - xcversion select 13.4.1
             - bundle exec fastlane test
   - name: Build app
     task:
@@ -37,7 +37,7 @@ blocks:
       jobs:
         - name: Build
           commands:
-            - xcversion select 13.4
+            - xcversion select 13.4.1
             - bundle exec fastlane build
   - name: Take screenshots
     task:
@@ -54,7 +54,7 @@ blocks:
       jobs:
         - name: Screenshots
           commands:
-            - xcversion select 13.4
+            - xcversion select 13.4.1
             - xcrun simctl list
             - bundle exec fastlane screenshots
             - artifact push job screenshots
