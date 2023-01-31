@@ -36,3 +36,7 @@ Reimplement these tests:
 - [ ] Check that 'Burj Khalifa' exists in the list and tap on it 
 - [ ] Check that 'Shanghai Tower' exists in the list and tap on it 
 - [ ] Tap on a tower entry and check the details match that tower
+
+## Reference links
+https://semaphoreci.com/blog/xcode-unit-testing-tutorial
+https://semaphoreci.com/blog/ui-testing-swift
