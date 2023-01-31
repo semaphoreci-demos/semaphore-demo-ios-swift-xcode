@@ -10,6 +10,7 @@
 
 ## Todo
 
+- [x] Run the app in a simulator, does it work? (Yes, ran in iPhone 14 Pro, iOS 16.1, XCode 14.1)
 - [x] Write down what each unit and UI test does (in plain English)
 - [x] Delete the original unit and UI tests (apart from the import statements) - Ouch!
 - [ ] Re-implement those tests (without looking)
