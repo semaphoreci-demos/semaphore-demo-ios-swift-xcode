@@ -11,7 +11,7 @@
 ## Todo
 
 - [x] Write down what each unit and UI test does (in plain English)
-- [ ] Delete the original unit and UI tests (apart from the import statements)
+- [x] Delete the original unit and UI tests (apart from the import statements) - Ouch!
 - [ ] Re-implement those tests (without looking)
 - [ ] Compare your answers to the original solutions
 
