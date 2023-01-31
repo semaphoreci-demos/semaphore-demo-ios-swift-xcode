@@ -10,7 +10,29 @@
 
 ## Todo
 
-- [ ] Write down what each unit and UI test does (in plain English)
-- [ ] Delete the original unit and UI tests
+- [x] Write down what each unit and UI test does (in plain English)
+- [ ] Delete the original unit and UI tests (apart from the import statements)
 - [ ] Re-implement those tests (without looking)
 - [ ] Compare your answers to the original solutions
+
+## The tests
+
+Reimplement these tests:
+
+**Unit Tests**
+
+- [ ] Create a test case called 'TowerInstanceTests'
+    - [ ] Create a a setup function. It should create a test variable to store a dummy tower, use the implicit unwrapped optional. 
+    - [ ] 'testLocationShouldBeCreatedFromLatitudeAndLongitudeProperties' - check you can access the location's latitude and longitude for a Tower instance. Pay attention to accuracy.
+    - [ ] 'testCityAndCountryShouldConcatenateCityAndCountry' - self-evident.
+    - [ ] 'testFormattedHeightIncludesUnits' - self-evident.
+- [ ] Create a test case called 'TowerStaticTests'
+    - [ ] 'testTallestTowersShouldNotBeEmpty' - self-evident.
+
+**UI Tests**
+
+- [ ] Create a test case called 'TallestTowersUITests'
+- [ ] Set up the app to launch
+- [ ] Check that 'Burj Khalifa' exists in the list and tap on it 
+- [ ] Check that 'Shanghai Tower' exists in the list and tap on it 
+- [ ] Tap on a tower entry and check the details match that tower
