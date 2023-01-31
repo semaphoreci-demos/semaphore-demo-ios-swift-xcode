@@ -38,5 +38,6 @@ Reimplement these tests:
 - [ ] Tap on a tower entry and check the details match that tower
 
 ## Reference links
-https://semaphoreci.com/blog/xcode-unit-testing-tutorial
-https://semaphoreci.com/blog/ui-testing-swift
+
+- https://semaphoreci.com/blog/xcode-unit-testing-tutorial
+- https://semaphoreci.com/blog/ui-testing-swift
