@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4AC5DAEB298A95A9005F8D87 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 4AC5DAEA298A95A9005F8D87 /* .gitignore */; };
+		4AD41444298AB54500535960 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AD41442298AB54500535960 /* LaunchScreen.storyboard */; };
 		55088B87234F444C006CF75A /* TowersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55088B86234F444C006CF75A /* TowersView.swift */; };
 		55088B89234F45AF006CF75A /* TowerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55088B88234F45AF006CF75A /* TowerRow.swift */; };
 		55088B8B234F4EEB006CF75A /* TowerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55088B8A234F4EEB006CF75A /* TowerDetailView.swift */; };
@@ -51,6 +52,7 @@
 
 /* Begin PBXFileReference section */
 		4AC5DAEA298A95A9005F8D87 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = SOURCE_ROOT; };
+		4AD41443298AB54500535960 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		55088B86234F444C006CF75A /* TowersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TowersView.swift; sourceTree = "<group>"; };
 		55088B88234F45AF006CF75A /* TowerRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TowerRow.swift; sourceTree = "<group>"; };
 		55088B8A234F4EEB006CF75A /* TowerDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TowerDetailView.swift; sourceTree = "<group>"; };
@@ -108,6 +110,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4AD41441298AB54500535960 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				4AD41442298AB54500535960 /* LaunchScreen.storyboard */,
+			);
+			name = Base.lproj;
+			path = TallestTowers/Base.lproj;
+			sourceTree = "<group>";
+		};
 		55088B8E234F678D006CF75A /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +150,7 @@
 		5519C14D234E33420022E332 = {
 			isa = PBXGroup;
 			children = (
+				4AD41441298AB54500535960 /* Base.lproj */,
 				55CFADD7235F860E0067DBB7 /* LICENSE */,
 				4AC5DAEA298A95A9005F8D87 /* .gitignore */,
 				55CFADD5235F44380067DBB7 /* README.md */,
@@ -332,6 +344,7 @@
 				55CFADD6235F44390067DBB7 /* README.md in Resources */,
 				5519C166234E33430022E332 /* LaunchScreen.storyboard in Resources */,
 				55CFADD8235F860E0067DBB7 /* LICENSE in Resources */,
+				4AD41444298AB54500535960 /* LaunchScreen.storyboard in Resources */,
 				4AC5DAEB298A95A9005F8D87 /* .gitignore in Resources */,
 				5519C160234E33430022E332 /* Assets.xcassets in Resources */,
 			);
@@ -421,6 +434,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		4AD41442298AB54500535960 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4AD41443298AB54500535960 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		5519C164234E33430022E332 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
