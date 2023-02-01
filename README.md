@@ -44,12 +44,14 @@ Mission accomplished, I did it and took away 4-5 learning points from this!
 - [x] Test 0 - Check that the title on app home screen is 'Tallest Towers'
 - [x] Test 1 - Check that 'Burj Khalifa' exists in the list and tap on it
 - [x] Test 2 - Check that 'Shanghai Tower' exists in the list and tap on it
-- [ ] Test 3 - Tap on a tower entry and check the details match that tower
-- [ ] Test 4 (BONUS) - For tests 1 and 2, check the backlink 'Tallest Towers' exists
+- [x] Test 3 - Tap on a tower entry and check the details match that tower
+- [x] (BONUS) - For tests 1 and 2, check the backlink 'Tallest Towers' exists
 
 ## What I learned
 
 Learn from mistakes, see closed issues in this repo.
+
+One non-technical lesson. Next time, don't practice with a repo that is more than a year old.
 
 ## Reference links
 
