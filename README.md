@@ -22,12 +22,15 @@ Reimplement these tests:
 **Unit Tests**
 
 - [x] Create a test case called 'TowerInstanceTests'
-    - [ ] Create a a setup function. It should create a test variable to store a dummy tower, use the implicit unwrapped optional. 
-    - [ ] 'testLocationShouldBeCreatedFromLatitudeAndLongitudeProperties' - check you can access the location's latitude and longitude for a Tower instance. Pay attention to accuracy.
-    - [ ] 'testCityAndCountryShouldConcatenateCityAndCountry' - self-evident.
-    - [ ] 'testFormattedHeightIncludesUnits' - self-evident.
+    - [x] Create a a setup function. It should create a test variable to store a dummy tower, use the implicit unwrapped optional. 
+    - [x] 'testLocationShouldBeCreatedFromLatitudeAndLongitudeProperties' - check you can access the location's latitude and longitude for a Tower instance. Pay attention to accuracy.
+    - [x] 'testCityAndCountryShouldConcatenateCityAndCountry' - self-evident.
+    - [x] 'testFormattedHeightIncludesUnits' - self-evident.
 - [x] Create a test case called 'TowerStaticTests'
-    - [ ] 'testTallestTowersShouldNotBeEmpty' - self-evident.
+    - [x] 'testTallestTowersShouldNotBeEmpty' - self-evident.
+- [x] Run unit tests
+    
+Mission accomplished, I did it and took away 4-5 learning points from this!
 
 **UI Tests**
 
@@ -36,6 +39,11 @@ Reimplement these tests:
 - [ ] Check that 'Burj Khalifa' exists in the list and tap on it 
 - [ ] Check that 'Shanghai Tower' exists in the list and tap on it 
 - [ ] Tap on a tower entry and check the details match that tower
+
+## What I learned
+
+Learn from mistakes, see closed issues in this repo.
+
 
 ## Reference links
 

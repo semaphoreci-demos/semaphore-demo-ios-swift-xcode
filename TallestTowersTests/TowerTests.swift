@@ -1,18 +1,49 @@
 import XCTest
 @testable import TallestTowers
 
-//- [x] Create a test case called 'TowerInstanceTests'
-//    - [ ] Create a a setup function. It should create a test variable to store a dummy tower, use the implicit unwrapped optional.
-//    - [ ] 'testLocationShouldBeCreatedFromLatitudeAndLongitudeProperties' - check you can access the location's latitude and longitude for a Tower instance. Pay attention to accuracy.
-//    - [ ] 'testCityAndCountryShouldConcatenateCityAndCountry' - self-evident.
-//    - [ ] 'testFormattedHeightIncludesUnits' - self-evident.
-//- [x] Create a test case called 'TowerStaticTests'
-//    - [ ] 'testTallestTowersShouldNotBeEmpty' - self-evident.
-
 class TowerInstanceTests: XCTestCase {
-    // do something
+    
+    var subject: Tower!
+    
+    override func setUp() {
+        // Taken from Wikipedia
+        subject = Tower(
+            name: "Tokyo Tower",
+            city: "Tokyo",
+            country: "Japan",
+            height: 333,
+            yearBuilt: 1958,
+            latitude: 35.6583,
+            longitude: 139.773
+        )
+    }
+    
+    override func tearDown() {
+        subject = nil
+    }
+    
+    func testCityShouldBeAssignedTokyo() {
+        XCTAssert(subject.city == "Tokyo")
+    }
+    
+    func testLocationShouldBeCreatedFromLatitudeAndLongitudeProperties() {
+        XCTAssertEqual(subject.location.latitude, 35.6583, accuracy: 0.00001)
+        XCTAssertEqual(subject.location.longitude, 139.773, accuracy: 0.00001)
+    }
+    
+    func testCityAndCountryShouldConcatenateCityAndCountry() {
+        XCTAssertEqual(subject.cityAndCountry, "Tokyo, Japan")
+    }
+    
+    func testFormattedHeightIncludesUnits() {
+        XCTAssertEqual(subject.formattedHeight, "333m")
+    }
 }
 
 class TowerStaticTests: XCTestCase {
-    // do something
+    
+    func testTallestTowersShouldHaveTenTowers() {
+        XCTAssert(Tower.tallestTowers.count == 10)
+    }
+    
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4AC5DAEB298A95A9005F8D87 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 4AC5DAEA298A95A9005F8D87 /* .gitignore */; };
 		55088B87234F444C006CF75A /* TowersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55088B86234F444C006CF75A /* TowersView.swift */; };
 		55088B89234F45AF006CF75A /* TowerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55088B88234F45AF006CF75A /* TowerRow.swift */; };
 		55088B8B234F4EEB006CF75A /* TowerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55088B8A234F4EEB006CF75A /* TowerDetailView.swift */; };
@@ -49,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4AC5DAEA298A95A9005F8D87 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = SOURCE_ROOT; };
 		55088B86234F444C006CF75A /* TowersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TowersView.swift; sourceTree = "<group>"; };
 		55088B88234F45AF006CF75A /* TowerRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TowerRow.swift; sourceTree = "<group>"; };
 		55088B8A234F4EEB006CF75A /* TowerDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TowerDetailView.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				55CFADD7235F860E0067DBB7 /* LICENSE */,
+				4AC5DAEA298A95A9005F8D87 /* .gitignore */,
 				55CFADD5235F44380067DBB7 /* README.md */,
 				5519C158234E33420022E332 /* TallestTowers */,
 				5519C16F234E33440022E332 /* TallestTowersTests */,
@@ -329,6 +332,7 @@
 				55CFADD6235F44390067DBB7 /* README.md in Resources */,
 				5519C166234E33430022E332 /* LaunchScreen.storyboard in Resources */,
 				55CFADD8235F860E0067DBB7 /* LICENSE in Resources */,
+				4AC5DAEB298A95A9005F8D87 /* .gitignore in Resources */,
 				5519C160234E33430022E332 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
