@@ -1,7 +1,5 @@
 import XCTest
 
-//- [ ] Test 3 - Tap on a tower entry and check the details match that tower
-
 class TallestTowersUITests: XCTestCase {
     
     let app = XCUIApplication()
