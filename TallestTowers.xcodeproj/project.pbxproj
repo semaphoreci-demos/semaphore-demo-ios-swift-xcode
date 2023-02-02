@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4AC5DAEB298A95A9005F8D87 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 4AC5DAEA298A95A9005F8D87 /* .gitignore */; };
 		55088B87234F444C006CF75A /* TowersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55088B86234F444C006CF75A /* TowersView.swift */; };
 		55088B89234F45AF006CF75A /* TowerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55088B88234F45AF006CF75A /* TowerRow.swift */; };
 		55088B8B234F4EEB006CF75A /* TowerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55088B8A234F4EEB006CF75A /* TowerDetailView.swift */; };
@@ -49,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4AC5DAEA298A95A9005F8D87 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = SOURCE_ROOT; };
 		55088B86234F444C006CF75A /* TowersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TowersView.swift; sourceTree = "<group>"; };
 		55088B88234F45AF006CF75A /* TowerRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TowerRow.swift; sourceTree = "<group>"; };
 		55088B8A234F4EEB006CF75A /* TowerDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TowerDetailView.swift; sourceTree = "<group>"; };
@@ -66,18 +68,12 @@
 		5519C17B234E33440022E332 /* TallestTowersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TallestTowersUITests.swift; sourceTree = "<group>"; };
 		5519C17D234E33440022E332 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5519C189234E35880022E332 /* Tower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tower.swift; sourceTree = "<group>"; };
-		552B707D236B5D9300ACC210 /* Pluginfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Pluginfile; sourceTree = "<group>"; };
-		552B707E236B5D9300ACC210 /* Appfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Appfile; sourceTree = "<group>"; };
-		552B707F236B5D9300ACC210 /* Fastfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Fastfile; sourceTree = "<group>"; };
 		5535C7972382FF7B00E65B03 /* TallestTowersScreenshots.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TallestTowersScreenshots.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5535C7992382FF7B00E65B03 /* TallestTowersScreenshots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TallestTowersScreenshots.swift; sourceTree = "<group>"; };
 		5535C79B2382FF7B00E65B03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5535C7A12382FFD400E65B03 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
-		5535C7A32383038C00E65B03 /* Snapfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Snapfile; sourceTree = "<group>"; };
-		55AE65672360A0D60064B1AB /* semaphore.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = semaphore.yml; sourceTree = "<group>"; };
 		55CFADD5235F44380067DBB7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		55CFADD7235F860E0067DBB7 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		55FC950923995EA6008108F0 /* Matchfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Matchfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,9 +140,8 @@
 			isa = PBXGroup;
 			children = (
 				55CFADD7235F860E0067DBB7 /* LICENSE */,
+				4AC5DAEA298A95A9005F8D87 /* .gitignore */,
 				55CFADD5235F44380067DBB7 /* README.md */,
-				552B7079236B5D9300ACC210 /* fastlane */,
-				55AE65662360A0D60064B1AB /* .semaphore */,
 				5519C158234E33420022E332 /* TallestTowers */,
 				5519C16F234E33440022E332 /* TallestTowersTests */,
 				5519C17A234E33440022E332 /* TallestTowersUITests */,
@@ -197,18 +192,6 @@
 			path = TallestTowersUITests;
 			sourceTree = "<group>";
 		};
-		552B7079236B5D9300ACC210 /* fastlane */ = {
-			isa = PBXGroup;
-			children = (
-				552B707E236B5D9300ACC210 /* Appfile */,
-				552B707F236B5D9300ACC210 /* Fastfile */,
-				55FC950923995EA6008108F0 /* Matchfile */,
-				5535C7A32383038C00E65B03 /* Snapfile */,
-				552B707D236B5D9300ACC210 /* Pluginfile */,
-			);
-			path = fastlane;
-			sourceTree = "<group>";
-		};
 		5535C7982382FF7B00E65B03 /* TallestTowersScreenshots */ = {
 			isa = PBXGroup;
 			children = (
@@ -217,14 +200,6 @@
 				5535C79B2382FF7B00E65B03 /* Info.plist */,
 			);
 			path = TallestTowersScreenshots;
-			sourceTree = "<group>";
-		};
-		55AE65662360A0D60064B1AB /* .semaphore */ = {
-			isa = PBXGroup;
-			children = (
-				55AE65672360A0D60064B1AB /* semaphore.yml */,
-			);
-			path = .semaphore;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,7 +283,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1120;
-				LastUpgradeCheck = 1110;
+				LastUpgradeCheck = 1410;
 				ORGANIZATIONNAME = "Semaphore CI";
 				TargetAttributes = {
 					5519C155234E33420022E332 = {
@@ -357,6 +332,7 @@
 				55CFADD6235F44390067DBB7 /* README.md in Resources */,
 				5519C166234E33430022E332 /* LaunchScreen.storyboard in Resources */,
 				55CFADD8235F860E0067DBB7 /* LICENSE in Resources */,
+				4AC5DAEB298A95A9005F8D87 /* .gitignore in Resources */,
 				5519C160234E33430022E332 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -482,6 +458,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -542,6 +519,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
