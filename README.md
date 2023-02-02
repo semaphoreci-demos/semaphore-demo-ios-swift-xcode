@@ -49,9 +49,7 @@ Mission accomplished, I did it and took away 4-5 learning points from this!
 
 ## What I learned
 
-Learn from mistakes, see the [logged issues](https://github.com/p2635/ios-swift-tallest-towers-app/issues?q=is%3Aissue) in this repo.
-
-One non-technical lesson. Next time, don't practice with a repo that is more than a year old.
+See [logged issues](https://github.com/p2635/ios-swift-tallest-towers-app/issues?q=is%3Aissue) in this repo. One non-technical lesson. Next time, don't practice with a repo that is more than a year old.
 
 ## Reference links
 
